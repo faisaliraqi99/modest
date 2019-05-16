@@ -6003,6 +6003,10 @@ readers do not read off random characters that represent icons */
   color: #292f36;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .header {
   background: #1d2126;
 }
@@ -6127,11 +6131,11 @@ readers do not read off random characters that represent icons */
   color: transparent;
 }
 
-.about .flex-container {
-  display: flex;
-}
 .about-us {
   padding: 5.3125rem 0 0 0;
+}
+.about-us-sidebar-list {
+  width: 42%;
 }
 .about-us-first, .about-us-sidebar {
   display: inline-block;
@@ -6140,15 +6144,13 @@ readers do not read off random characters that represent icons */
 .about-us-first {
   max-width: 58%;
 }
-.about-us-sidebar {
-  margin-left: 1.875rem;
-  vertical-align: top;
-}
 .about-us-sidebar-list {
+  vertical-align: top;
   display: inline-block;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 1.875rem;
 }
 .about-us-title {
   padding-left: 0.875rem;
@@ -6163,6 +6165,7 @@ readers do not read off random characters that represent icons */
 
 .sidebar__item {
   font-size: 0;
+  margin-bottom: 2.5rem;
 }
 .sidebar__item-side {
   display: inline-block;
@@ -6181,15 +6184,18 @@ readers do not read off random characters that represent icons */
   background: #23b7a4;
 }
 .sidebar__item-title {
-  display: inline-block;
+  font-family: "Quattrocento Sans";
   font-size: 1.125rem;
+  line-height: 1.125rem;
   color: #292f36;
   vertical-align: top;
-  margin: 0 0 0 0;
+  margin: 0 0 1.25rem 0;
 }
 .sidebar__item-description {
   margin: 0;
   font-size: 1rem;
+  line-height: 1.625rem;
+  color: #8d8f92;
 }
 
 /*# sourceMappingURL=main.css.map */
