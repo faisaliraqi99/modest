@@ -1,0 +1,29 @@
+@function rem($px)
+	@return $px / 16px + 0rem
+
+=phone
+	@media screen and (min-width: $phone)
+		@content
+
+=tablet
+	@media screen and (min-width: $tablet)
+		@content
+
+=laptop
+	@media screen and (min-width: $laptop)
+		@content
+
+=desktop
+	@media screen and (min-width: $desktop)
+		@content
+
+=titleFont
+	font-family: $titleFont, sans-serif
+	font-size: rem(32px)
+	font-weight: 800
+
+=noList
+	display: inline-block
+	margin: 0
+	padding: 0
+	list-style-type: none

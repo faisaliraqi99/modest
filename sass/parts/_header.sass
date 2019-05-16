@@ -1,0 +1,35 @@
+.header
+	background: #1d2126
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: rem(32px) rem(15px)
+	&-logo
+		height: 100%
+	&-nav__list
+		padding: 0
+		margin: 0
+		line-height: rem(10px)
+		font-size: rem(14px)
+		font-family: 'OpenSans-Semi', sans-serif
+	&-nav__item
+		+noList
+		padding: rem(8px) rem(10px)
+		border-radius: 4px
+		margin-right: rem(16px)
+		border: 2px solid transparent
+		transition: border-color .2s
+		&:first-child
+			border: 2px solid $accentColor
+			.header-nav__link
+				color: $accentColor
+		&:hover
+			border-color: #5b6168
+			cursor: pointer
+			.header-nav__link
+				color: #a4aead
+	&-nav__link
+		color: #a4aead
+		text-decoration: none
+		text-transform: uppercase
