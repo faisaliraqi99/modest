@@ -1,0 +1,49 @@
+.about
+	.flex-container
+		display: flex
+	&-us
+		padding: rem(85px) 0 0 0
+		&-sidebar
+		&-first, &-sidebar
+			display: inline-block
+			color: $textColor
+		&-first
+			max-width: 58%
+		&-sidebar
+			margin-left: rem(30px)
+			vertical-align: top
+			&-list
+				+noList
+		&-title
+			padding-left: rem(14px)
+			border-left: 10px solid $lightColor
+	&-text
+		margin: 0 0 rem(40px) 0
+		&:last-child
+			margin-bottom: rem(55px)
+.sidebar
+	&__item
+		font-size: 0
+		&-side
+			display: inline-block
+			max-width: rem(370px)
+		&-number
+			display: inline-block
+			color: #fff
+			font-size: rem(20px)
+			width: rem(50px)
+			height: rem(50px)
+			margin-right: rem(20px)
+			line-height: rem(50px)
+			text-align: center
+			vertical-align: top
+			background: $accentColor
+		&-title
+			display: inline-block
+			font-size: rem(18px)
+			color: $mainColorDark
+			vertical-align: top
+			margin: 0 0 0 0
+		&-description
+			margin: 0
+			font-size: 1rem
