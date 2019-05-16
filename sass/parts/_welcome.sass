@@ -1,3 +1,60 @@
 .welcome
+	position: relative
+	width: 100%
 	background: url('../img/bg_welcome.png')
-	height: 500px
+	background-size: cover
+	padding: rem(225px) 0px rem(250px) 0px
+
+.slider
+	margin: 0
+	&-title
+		line-height: rem(30px)
+		margin-bottom: rem(34px)
+	&-subtitle
+		max-width: 55%
+		color: #ccd0d7
+		margin: 0 0 rem(45px) 0
+	&-buttons
+		font-size: 0
+	&-button
+		display: inline-block
+		padding: rem(15px) rem(20px)
+		border: 2px solid #fff
+		border-radius: 5px
+		color: #fff
+		text-decoration: none
+		text-transform: uppercase
+		font-family: $titleFont, sans-serif
+		font-size: 1rem
+		outline: none
+		transition: background-color, border-color, .2s
+		&:last-child
+			margin-left: rem(11px)
+		&:hover
+			background-color: $accentColor
+			border-color: $accentColor
+	&-dots-container
+		position: absolute
+		width: 100%
+		bottom: 0
+
+.slick
+	&-slider
+		position: static
+	&-dots
+		position: absolute
+		text-align: right
+		bottom: 0
+		li
+			width: 10px
+			height: 10px
+			margin: 0 0 rem(30px) rem(14px)
+			border: 2px solid #fff
+			border-radius: 50%
+			background-color: transparent
+			button:before
+				color: transparent
+		li.slick-active
+			background-color: #fff
+			button:before
+				color: transparent
