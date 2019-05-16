@@ -12,9 +12,6 @@
 			vertical-align: top
 			+noList
 			margin-left: rem(30px)
-		&-title
-			padding-left: rem(14px)
-			border-left: 10px solid $lightColor
 	&-text
 		margin: 0 0 rem(40px) 0
 		&:last-child
@@ -39,6 +36,71 @@
 
 	&-team
 		padding: rem(86px) 0 0 0
+		&-title
+			margin-bottom: rem(60px)
+		&-list
+			+noList
+			display: flex
+			justify-content: space-between
+		&__item
+			color: #000
+			width: rem(263px)
+			cursor: pointer
+			&:hover
+				.about-team__description
+					background: $mainColor
+					color: #fff
+				.about-team__description-subtitle
+					color: #fff
+				.about-team__overlay
+					background: rgba(255,255,255, .4)
+				.about-team__icons
+					display: flex
+		&__icons
+			+noList
+			width: 100%
+			height: 100%
+			display: none
+			align-items: center
+			justify-content: center
+		&__icon
+			width: rem(50px)
+			height: rem(50px)
+			margin-right: 1px
+			background-color: $mainColor
+			text-align: center
+			line-height: rem(50px)
+			color: #fff
+			font-size: rem(18px)
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: $mainColorLighten
+		&__img
+			height: rem(300px)
+			background: url('../img/team/one.png')
+		&__overlay
+			width: 100%
+			height: 100%
+			background-color: transparent
+			transition: background-color.2s
+		&__description
+			height: 75px
+			background-color: $lightColor
+			padding: rem(20px) 0 0 rem(20px)
+			box-sizing: border-box
+			transition: background-color .2s
+			transition: color .2s
+			&-title
+				font-family: $titleFont
+				line-height: 1rem
+				text-transform: uppercase
+				margin-bottom: rem(10px)
+			&-subtitle
+				font-size: rem(14px)
+				color: $textColorDark
+				line-height: rem(14px)
+				transition: color .2s
 .sidebar
 	&__item
 		font-size: 0
