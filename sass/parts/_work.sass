@@ -1,0 +1,74 @@
+.work
+	padding: rem(80px) 0 rem(60px) 0
+	background-color: $mainColor
+	&-title
+		margin-bottom: rem(60px)
+	&-list
+		+noList
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-item
+		position: relative
+		margin-bottom: rem(30px)
+		overflow: hidden
+		cursor: pointer
+		&:hover
+			.work-item__img:before
+				top: 0
+				filter: blur(0)
+			.work-item__img:after
+				bottom: 0
+				filter: blur(0)
+		&:nth-child(1)
+			.work-item__img
+				background: url('../img/work/one.png')
+		&:nth-child(2)
+			.work-item__img
+				background: url('../img/work/two.png')
+		&:nth-child(3)
+			.work-item__img
+				background: url('../img/work/three.png')
+		&:nth-child(4)
+			.work-item__img
+				background: url('../img/work/four.png')
+		&:nth-child(5)
+			.work-item__img
+				background: url('../img/work/five.png')
+		&:nth-child(6)
+			.work-item__img
+				background: url('../img/work/six.png')
+		&__img
+			width: rem(360px)
+			height: rem(265px)
+			// background: url('../img/work/one.png')
+			&:after
+				content: 'partnership guidlines'
+				position: absolute
+				height: rem(60px)
+				line-height: rem(60px)
+				width: 100%
+				bottom: rem(-60px)
+				text-transform: uppercase
+				font-family: $titleFont
+				font-size: rem(18px)
+				padding-left: rem(20px)
+				background: $mainColorDark
+				box-sizing: border-box
+				filter: blur(10px)
+				transition: .5s
+			&:before
+				content: '+'
+				position: absolute
+				height: rem(205px)
+				line-height: rem(205px)
+				font-size: rem(50px)
+				font-weight: 800
+				width: 100%
+				background: rgba(41,47,54, .5)
+				text-align: center
+				top: rem(-205px)
+				filter: blur(10px)
+				transition: .5s
+	&-button
+		margin-top: rem(60px)
