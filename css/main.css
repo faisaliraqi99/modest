@@ -6580,4 +6580,24 @@ hr {
   background-color: #23b7a4;
 }
 
+.footer {
+  background-color: #3a454d;
+  padding: 2.5rem 0;
+}
+.footer-link {
+  color: #fff;
+  font-size: 1.125rem;
+  margin-right: 1.25rem;
+}
+.footer-link:last-child {
+  margin-right: 0;
+}
+.footer .container {
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.875rem;
+}
+
 /*# sourceMappingURL=main.css.map */
