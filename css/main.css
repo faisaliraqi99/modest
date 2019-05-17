@@ -6458,4 +6458,32 @@ hr {
   margin: 0;
 }
 
+.features {
+  background-color: #3a454d;
+  padding: 5.3125rem 0 7.8125rem 0;
+}
+.features-title {
+  margin-bottom: 3.75rem;
+}
+.features-list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features-item {
+  max-width: 22.5rem;
+}
+.features-item-title {
+  font-size: 1.125rem;
+  margin: 3.4375rem 0 2.125rem 0;
+}
+.features-item-desc {
+  line-height: 1.625rem;
+  color: #dcdfe1;
+  margin: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
