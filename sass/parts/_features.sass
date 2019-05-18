@@ -7,8 +7,13 @@
 		+noList
 		display: flex
 		justify-content: space-between
+		+tablet
+			flex-wrap: wrap
+			justify-content: center
 	&-item
 		max-width: rem(360px)
+		+tablet
+			margin-bottom: 1.25rem
 		&-title
 			font-size: rem(18px)
 			margin: rem(55px) 0 rem(34px) 0

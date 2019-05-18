@@ -13,6 +13,14 @@
 		line-height: rem(10px)
 		font-size: rem(14px)
 		font-family: 'OpenSans-Semi', sans-serif
+		+tablet
+			position: absolute
+			background-color: $mainColor
+			z-index: 1
+			width: 100%
+			right: -100%
+			top: 123px
+			transition: .5s
 	&-nav__item
 		+noList
 		padding: rem(8px) rem(10px)
@@ -22,8 +30,17 @@
 		transition: border-color .2s
 		&:first-child
 			border: 2px solid $accentColor
+			+tablet
+				border: none
 			.header-nav__link
 				color: $accentColor
+				+tablet
+					color: #a4aead
+		+tablet
+			display: block
+			text-align: center
+			border: none
+			margin: rem(16px) 0
 		&:hover
 			border-color: #5b6168
 			cursor: pointer
@@ -33,3 +50,8 @@
 		color: #a4aead
 		text-decoration: none
 		text-transform: uppercase
+.hamburger
+	display: none
+	outline: none
+	+tablet
+		display: inline-block

@@ -2,19 +2,19 @@
 	@return $px / 16px + 0rem
 
 =phone
-	@media screen and (min-width: $phone)
+	@media screen and (max-width: $phone)
 		@content
 
 =tablet
-	@media screen and (min-width: $tablet)
+	@media screen and (max-width: $tablet)
 		@content
 
 =laptop
-	@media screen and (min-width: $laptop)
+	@media screen and (max-width: $laptop)
 		@content
 
 =desktop
-	@media screen and (min-width: $desktop)
+	@media screen and (max-width: $desktop)
 		@content
 
 =titleFont
